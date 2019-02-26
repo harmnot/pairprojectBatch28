@@ -5,7 +5,7 @@ import expressLayouts from "express-ejs-layouts";
 import ejs from "ejs";
 
 import flash from "connect-flash";
-import session from "express-session"
+import session from "express-session";
 
 // EJS
 app.use(expressLayouts);
@@ -36,4 +36,6 @@ app.use((req, res, next) => {
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => console.log(`you are connected at port ${PORT}`));
+app.listen(PORT, () =>
+  console.log(`you are connected at port http://localhost:${PORT}`)
+);
