@@ -8,8 +8,11 @@ import flash from "connect-flash";
 import session from "express-session";
 
 import addPlayers from './routes/players'
+import home from './routes/home'
 
+// file script and css
 app.use(express.static('public'))
+
 // EJS
 app.use(expressLayouts);
 app.set("view engine", "ejs");
@@ -39,9 +42,7 @@ app.use((req, res, next) => {
 });
 
 app.use('/register', addPlayers )
-app.get('/', (req, res) => {
-  res.render('partials/header')
-})
+app.get('/', home)
 
 app.get('/login', (req, res) => {
   res.render('login')
