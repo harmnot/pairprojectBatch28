@@ -43,46 +43,8 @@ router.post('/',(req, res, next) => {
             })
           })
         })
-
     }
-    // if(ar.length != 0){
-    //   req.flash('error_msg', 'ada orangnya')
-    //
-    // } else {
-    //   req.flash('error_msg', err)
-    // }
-    // if(arr.length !== 0){
-    //
-    // } else {
-    //   bcrypt.genSalt(10, (err, salt) => {
-    //     bcrypt.hash(obj.password, salt, (err, hash) => {
-    //       if(err) throw err
-    //       obj.password = hash
-    //       console.log(obj);
-    //     })
-    //   })
-    //
-    // }
   }).catch((err) => res.send(err.message))
-
-  // bcrypt.genSalt(10, (err, salt) => {
-  //   bcrypt.hash(obj.password, salt, (err, hash) => {
-  //     if(err) throw err
-  //     obj.password = hash
-  //     console.log(obj)
-  //   })
-  // })
-
-  // Players.findOne({ where : { email: email }})
-  // .then( data => {
-  //   if(data){
-  //     res.send('sudah ada')
-  //   } else {
-  //     console.log(req.body);
-  //   }
-  // })
-  // .catch(err => res.send(err))
-
 })
 
 
