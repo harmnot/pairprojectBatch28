@@ -6,6 +6,7 @@ import bcrypt from 'bcryptjs'
 
 
 router.get('/', (req, res) => {
+
   res.render('home')
 })
 
